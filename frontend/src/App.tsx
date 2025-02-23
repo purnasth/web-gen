@@ -4,6 +4,7 @@ import About from "./components/About";
 import { generateSite } from "./utils/generateSite";
 import { primaryColors } from "./utils/colors";
 import { headingFonts, bodyFonts } from "./utils/fonts";
+import Footer from "./components/Footer";
 
 const App: React.FC = () => {
   const [components, setComponents] = useState<
@@ -69,8 +70,38 @@ const App: React.FC = () => {
           name: "Design2",
           component: <About design="Design2" color={primaryColor} />,
         },
+        {
+          name: "Design3",
+          component: <About design="Design3" color={primaryColor} />,
+        },
       ],
     },
+    // Add footer
+    {
+      name: "Footer",
+      designs: [
+        {
+          name: "Design1",
+          component: <Footer design="Design1" color={primaryColor} />,
+        },
+        {
+          name: "Design2",
+          component: <Footer design="Design2" color={primaryColor} />,
+        },
+        {
+          name: "Design3",
+          component: <Footer design="Design3" color={primaryColor} />,
+        },
+        {
+          name: "Design4",
+          component: <Footer design="Design4" color={primaryColor} />,
+        },
+        {
+          name: "Design5",
+          component: <Footer design="Design5" color={primaryColor} />,
+        },
+      ],
+    }
   ];
 
   return (

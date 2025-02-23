@@ -31,12 +31,10 @@ const generateAboutHTML = (design: string, color: string): string => {
               walking distance.
             </p>
           </div>
-
-          <img
-            src="https://hotelhimalaya.purnashrestha.com.np/images/about/6.webp"
-            alt="Banner Image"
-            class="size-full object-cover mt-12 md:mt-24 outline-1 outline-${color}-50 -outline-offset-[10px]"
-          />
+          <video autoplay="" defaultmuted="" height="100%" loop="" muted="" playsinline="" preload="auto" width="100%" class="size-full object-cover mt-12 md:mt-24 outline outline-white -outline-offset-[10px]"
+          poster="https://hotelhimalaya.purnashrestha.com.np/images/about/6.webp"
+          >
+					<source src="https://hotelhimalaya.com/template/web/img/about/HOTEL_HIMALAYA.mp4" type="video/mp4">Video Not Supported</video>
         </div>
       </main>
     `;
@@ -202,7 +200,7 @@ const generateAboutHTML = (design: string, color: string): string => {
             <h3 class="text-3xl capitalize leading-snug sm:text-2xl md:text-4xl lg:text-5xl lg:leading-snug 2xl:text-6xl 2xl:leading-normal">
               About Satprayas Nepal
             </h3>
-            <p class="mb-6 text-sm text-dark/60 md:text-base lg:mb-12">
+            <p class="mb-6 text-sm text-black/60 md:text-base lg:mb-12">
               Satprayas Nepal is a service oriented non-profit organization that
               works for the well being and welfare of physically and mentally
               challenged children. It is registered in Bhaktapur District and
@@ -252,6 +250,14 @@ const generateAboutHTML = (design: string, color: string): string => {
         </div>
       </main>
     `;
+  }
+
+  if (design === "Design3") {
+    return `
+    <main class="pt-0"><div class="grid grid-cols-1 content-center gap-8 lg:grid-cols-3"><div class="flex items-center justify-center gap-8 pt-12 sm:gap-24 lg:block lg:space-y-24 lg:pt-64"><div class="flex items-end justify-end"><img src="https://himalayan-flavours.com/backend/images/articles/gallery/NIT57-8.webp" alt="Foods" class="h-64 w-auto object-cover sm:h-80 lg:h-60 lg:w-44 2xl:h-72 2xl:w-52"></div><div class="flex items-end"><img src="https://himalayan-flavours.com/backend/images/articles/gallery/XHuWa-5.webp" alt="Foods" class="h-64 w-auto object-cover sm:h-80 lg:h-full lg:w-80 2xl:w-96"></div></div><div class="top-0 flex max-h-fit flex-col items-center gap-4 bg-white text-center lg:sticky"><div class="bottom-0 h-0 w-px bg-black/50 lg:h-10 xl:h-40"></div><h3 class="mt-5 text-3xl capitalize leading-snug sm:text-2xl md:mt-16 md:text-4xl lg:text-6xl lg:leading-snug 2xl:text-8xl 2xl:leading-normal">Himalayan Flavours</h3><p class="mb-3 text-center text-sm text-black/60 md:mb-12 2xl:text-base">
+	Discover the best place to enjoy authentic Himalayan cuisine at Himalayan Flavours! Your favorite spot in the city for genuine Himalayan dishes. Our commitment is to deliver outstanding service and top-quality food.
+</p><a class="transition-all duration-200 group flex items-center justify-center gap-2 rounded-full border border-orange-300 bg-orange-300 px-6 py-2 text-sm hover:bg-white hover:text-orange-400 md:text-base" href="/about">Explore More</a></div><div class="flex items-center justify-center gap-8 pt-12 sm:gap-24 lg:block lg:space-y-24 lg:pt-64"><div class="flex items-end justify-end"><img src="https://himalayan-flavours.com/backend/images/articles/gallery/0JdFi-10.webp" alt="Foods" class="h-64 w-auto object-cover sm:h-80 lg:h-full lg:w-80 2xl:w-96"></div><div class="flex"><img src="https://himalayan-flavours.com/backend/images/articles/gallery/VHNR0-9.webp" alt="Foods" class="h-64 w-auto object-cover sm:h-80 lg:h-60 lg:w-44 2xl:h-72 2xl:w-52"></div></div></div></main>
+`;
   }
 
   return "";
