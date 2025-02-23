@@ -269,6 +269,150 @@ const generateFooterHTML = (design: string, color: string): string => {
 `;
   }
 
+  if (design === "Design5") {
+    return `
+   <footer class="h-auto overflow-hidden p-0 md:h-screen relative z-10 px-4 py-12 sm:py-24 md:px-12 md:py-32 lg:py-36 xl:px-16 xl:py-48">
+    <div class="pointer-events-none absolute bottom-0 -z-10 h-[calc(100%+25vh)] w-full bg-cover bg-bottom bg-no-repeat md:h-[140vh]"
+        style="background-image: url(&quot;/assets/bg_cuisine-CXN14gmB.png&quot;);"></div>
+    <div class="pointer-events-none absolute inset-0 -z-10 size-full bg-gradient-to-t from-white to-transparent"></div>
+    <section class="container mx-auto relative flex size-full flex-col items-center justify-evenly">
+        <div class="z-10 flex items-center justify-center"><a class="cursor-pointer" aria-label="Himalayan Flavours"
+                title="Himalayan Flavours" href="/"><img
+                    src="https://himalayan-flavours.com/backend/images/preference/CPM4u-logo.svg"
+                    alt="Himalayan Flavours Logo" class="h-40 w-auto object-contain"></a></div>
+        <div class="mt-16 grid grid-cols-1 gap-8 lg:grid-cols-7 lg:gap-0">
+            <div class="col-span-1 w-full lg:col-span-2"><span class="text-xs font-bold uppercase text-dark/70">Quick
+                    Links</span>
+                <ul class="links mt-4 flex flex-col items-start justify-start gap-2 md:mt-8 md:gap-4">
+                    <li class="group w-full"><a class="transition-all duration-200 ease-linear inline-flex w-full items-center justify-between pb-2 text-2xl font-bold capitalize text-dark group-hover:font-bold group-hover:tracking-wider" aria-label="About" href="/about">About</a></li>
+                    <li class="group w-full"><a class="transition-all duration-200 ease-linear inline-flex w-full items-center justify-between pb-2 text-2xl font-bold capitalize text-dark group-hover:font-bold group-hover:tracking-wider" aria-label="Menus" href="/food-menu">Menus</a></li>
+                    <li class="group w-full"><a class="transition-all duration-200 ease-linear inline-flex w-full items-center justify-between pb-2 text-2xl font-bold capitalize text-dark group-hover:font-bold group-hover:tracking-wider" aria-label="Food Gallery" href="/gallery">Food
+                            Gallery</a></li>
+                    <li class="group w-full"><a class="transition-all duration-200 ease-linear inline-flex w-full items-center justify-between pb-2 text-2xl font-bold capitalize text-dark group-hover:font-bold group-hover:tracking-wider" aria-label="Hours &amp; Location" href="/contact">Hours
+                            &amp; Location</a></li>
+                    <li class="group w-full"><a class="transition-all duration-200 ease-linear inline-flex w-full items-center justify-between pb-2 text-2xl font-bold capitalize text-dark group-hover:font-bold group-hover:tracking-wider" aria-label="Promotions" href="/offers">Promotions</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-span-1 lg:col-span-3">
+                <div class="w-full text-left lg:text-center"><span
+                        class="text-left text-xs font-bold uppercase text-dark/70 lg:text-center">Reviews</span>
+                    <div class="relative mt-8">
+                        <div class="h-full">
+                            <div class="swiper-wrapper">
+                                <div class="flex flex-col items-center" style="width: 672px;"
+                                    data-swiper-slide-index="0">
+                                    <p class="review text-justify text-sm sm:text-base md:text-pretty">
+                                        Amazing depth of flavour in dishes, very large servings. Best aloo parathas I’ve
+                                        had since Delhi. Cute automatic serving trolley! Very extensive menu. And they
+                                        do take credit cards despite what it says here. Highly recommended for a great meal and the experience of a nepalese, indian and chinese cuisines all in one place.
+                                    </p><a class="mt-6 flex items-center justify-center gap-3"
+                                        href="https://www.google.com/search?q=himalayan+flavours+victoria&amp;oq=himalayan+flavours+victoria&amp;gs_lcrp=EgZjaHJvbWUqBggAEEUYOzIGCAAQRRg7MggIARAAGBYYHjIICAIQABgWGB4yDQgDEAAYhgMYgAQYigUyDQgEEAAYhgMYgAQYigUyDQgFEAAYhgMYgAQYigUyCggGEAAYgAQYogQyCggHEAAYgAQYogQyBwgIEAAY7wUyCggJEAAYgAQYogTSAQgzNzgyajBqN6gCCLACAQ&amp;sourceid=chrome&amp;ie=UTF-8#lrd=0x548f73fa81b074ff:0x6a66914643d8d2,1,,,,"
+                                        target="_blank"><img
+                                            src="https://himalayan-flavours.com/backend/images/testimonial/Fv9hj-heMRC-fire.png"
+                                            alt="Brooke Clibbon"
+                                            class="size-12 rounded-full border border-black/20 bg-white object-contain shadow">
+                                        <div class="text-left">
+                                            <p class="caps text-base font-bold">Brooke Clibbon</p>
+                                            <p class="text-xs">via Google</p>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="mt-10 flex w-full items-center justify-between border-t-2 border-black/10"><span
+                        class="flex gap-0 text-base text-dark"><svg stroke="currentColor" fill="currentColor"
+                            stroke-width="0" viewBox="0 0 24 24" height="1em" width="1em"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path fill="none" d="M0 0h24v24H0z"></path>
+                            <path d="M14.43 10 12 2l-2.43 8H2l6.18 4.41L5.83 22 12 17.31 18.18 22l-2.35-7.59L22 10z">
+                            </path>
+                        </svg><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24"
+                            height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                            <path fill="none" d="M0 0h24v24H0z"></path>
+                            <path d="M14.43 10 12 2l-2.43 8H2l6.18 4.41L5.83 22 12 17.31 18.18 22l-2.35-7.59L22 10z">
+                            </path>
+                        </svg><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24"
+                            height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                            <path fill="none" d="M0 0h24v24H0z"></path>
+                            <path d="M14.43 10 12 2l-2.43 8H2l6.18 4.41L5.83 22 12 17.31 18.18 22l-2.35-7.59L22 10z">
+                            </path>
+                        </svg><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24"
+                            height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                            <path fill="none" d="M0 0h24v24H0z"></path>
+                            <path d="M14.43 10 12 2l-2.43 8H2l6.18 4.41L5.83 22 12 17.31 18.18 22l-2.35-7.59L22 10z">
+                            </path>
+                        </svg><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24"
+                            height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                            <path fill="none" d="M0 0h24v24H0z"></path>
+                            <path d="M14.43 10 12 2l-2.43 8H2l6.18 4.41L5.83 22 12 17.31 18.18 22l-2.35-7.59L22 10z">
+                            </path>
+                        </svg></span>
+                    <p class="my-4 text-sm text-dark/50"><strong class="font-bold text-dark">5.0</strong>/ 0 review</p>
+                </div>
+            </div>
+            <div class="col-span-1 w-full text-left lg:col-span-2 lg:text-right"><span
+                    class="text-xs font-bold uppercase text-dark/70">Contact Info</span>
+                <div class="mt-4 space-y-8 md:mt-8">
+                    <ul
+                        class="flex flex-col justify-start lg:justify-end items-start lg:items-end text-left lg:text-right gap-1">
+                        <li><a href="https://maps.app.goo.gl/ThmUvT8FABgwKMho7"
+                                class="inline-block text-sm font-bold hover:underline" target="_blank"
+                                rel="noopener noreferrer" aria-label="3945 Quadra St, Victoria, BC V8X 1J5, Canada">3945
+                                Quadra St, Victoria, BC V8X 1J5, Canada</a></li>
+                        <li><a href="tel:+1 (778) 966-7755" class="inline-block text-sm font-bold hover:underline"
+                                target="_blank" rel="noopener noreferrer" aria-label="+1 (778) 966-7755">+1 (778)
+                                966-7755</a></li>
+                        <li><a href="mailto:info@himalayan-flavours.com"
+                                class="inline-block text-sm font-bold hover:underline" target="_blank"
+                                rel="noopener noreferrer"
+                                aria-label="info@himalayan-flavours.com">info@himalayan-flavours.com</a></li>
+                    </ul>
+                    <ul
+                        class="my-6 flex justify-start lg:justify-end items-start lg:items-end text-left lg:text-right gap-4 text-2xl">
+                        <li class="group"><a rel="noreferrer noopener" aria-label="Facebook" title="Facebook"
+                                href="https://www.facebook.com/HimalayanFlavourRestaurant" target="_blank"><svg
+                                    stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 320 512"
+                                    class="text-lg transition-all duration-300 ease-linear group-hover:scale-125"
+                                    height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z">
+                                    </path>
+                                </svg></a></li>
+                        <li class="group"><a rel="noreferrer noopener" aria-label="Instagram" title="Instagram"
+                                href="/about" target="_blank"><svg stroke="currentColor" fill="currentColor"
+                                    stroke-width="0" viewBox="0 0 24 24"
+                                    class="text-lg transition-all duration-300 ease-linear group-hover:scale-125"
+                                    height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M13.0281 2.00073C14.1535 2.00259 14.7238 2.00855 15.2166 2.02322L15.4107 2.02956C15.6349 2.03753 15.8561 2.04753 16.1228 2.06003C17.1869 2.1092 17.9128 2.27753 18.5503 2.52503C19.2094 2.7792 19.7661 3.12253 20.3219 3.67837C20.8769 4.2342 21.2203 4.79253 21.4753 5.45003C21.7219 6.0867 21.8903 6.81337 21.9403 7.87753C21.9522 8.1442 21.9618 8.3654 21.9697 8.58964L21.976 8.78373C21.9906 9.27647 21.9973 9.84686 21.9994 10.9723L22.0002 11.7179C22.0003 11.809 22.0003 11.903 22.0003 12L22.0002 12.2821L21.9996 13.0278C21.9977 14.1532 21.9918 14.7236 21.9771 15.2163L21.9707 15.4104C21.9628 15.6347 21.9528 15.8559 21.9403 16.1225C21.8911 17.1867 21.7219 17.9125 21.4753 18.55C21.2211 19.2092 20.8769 19.7659 20.3219 20.3217C19.7661 20.8767 19.2069 21.22 18.5503 21.475C17.9128 21.7217 17.1869 21.89 16.1228 21.94C15.8561 21.9519 15.6349 21.9616 15.4107 21.9694L15.2166 21.9757C14.7238 21.9904 14.1535 21.997 13.0281 21.9992L12.2824 22C12.1913 22 12.0973 22 12.0003 22L11.7182 22L10.9725 21.9993C9.8471 21.9975 9.27672 21.9915 8.78397 21.9768L8.58989 21.9705C8.36564 21.9625 8.14444 21.9525 7.87778 21.94C6.81361 21.8909 6.08861 21.7217 5.45028 21.475C4.79194 21.2209 4.23444 20.8767 3.67861 20.3217C3.12278 19.7659 2.78028 19.2067 2.52528 18.55C2.27778 17.9125 2.11028 17.1867 2.06028 16.1225C2.0484 15.8559 2.03871 15.6347 2.03086 15.4104L2.02457 15.2163C2.00994 14.7236 2.00327 14.1532 2.00111 13.0278L2.00098 10.9723C2.00284 9.84686 2.00879 9.27647 2.02346 8.78373L2.02981 8.58964C2.03778 8.3654 2.04778 8.1442 2.06028 7.87753C2.10944 6.81253 2.27778 6.08753 2.52528 5.45003C2.77944 4.7917 3.12278 4.2342 3.67861 3.67837C4.23444 3.12253 4.79278 2.78003 5.45028 2.52503C6.08778 2.27753 6.81278 2.11003 7.87778 2.06003C8.14444 2.04816 8.36564 2.03847 8.58989 2.03062L8.78397 2.02433C9.27672 2.00969 9.8471 2.00302 10.9725 2.00086L13.0281 2.00073ZM12.0003 7.00003C9.23738 7.00003 7.00028 9.23956 7.00028 12C7.00028 14.7629 9.23981 17 12.0003 17C14.7632 17 17.0003 14.7605 17.0003 12C17.0003 9.23713 14.7607 7.00003 12.0003 7.00003ZM12.0003 9.00003C13.6572 9.00003 15.0003 10.3427 15.0003 12C15.0003 13.6569 13.6576 15 12.0003 15C10.3434 15 9.00028 13.6574 9.00028 12C9.00028 10.3431 10.3429 9.00003 12.0003 9.00003ZM17.2503 5.50003C16.561 5.50003 16.0003 6.05994 16.0003 6.74918C16.0003 7.43843 16.5602 7.9992 17.2503 7.9992C17.9395 7.9992 18.5003 7.4393 18.5003 6.74918C18.5003 6.05994 17.9386 5.49917 17.2503 5.50003Z">
+                                    </path>
+                                </svg></a></li>
+                        <li class="group"><a rel="noreferrer noopener" aria-label="Tiktok" title="Tiktok" href="/about"
+                                target="_blank"><svg stroke="currentColor" fill="currentColor" stroke-width="0"
+                                    viewBox="0 0 512 512"
+                                    class="text-lg transition-all duration-300 ease-linear group-hover:scale-125"
+                                    height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M412.19 118.66a109.27 109.27 0 0 1-9.45-5.5 132.87 132.87 0 0 1-24.27-20.62c-18.1-20.71-24.86-41.72-27.35-56.43h.1C349.14 23.9 350 16 350.13 16h-82.44v318.78c0 4.28 0 8.51-.18 12.69 0 .52-.05 1-.08 1.56 0 .23 0 .47-.05.71v.18a70 70 0 0 1-35.22 55.56 68.8 68.8 0 0 1-34.11 9c-38.41 0-69.54-31.32-69.54-70s31.13-70 69.54-70a68.9 68.9 0 0 1 21.41 3.39l.1-83.94a153.14 153.14 0 0 0-118 34.52 161.79 161.79 0 0 0-35.3 43.53c-3.48 6-16.61 30.11-18.2 69.24-1 22.21 5.67 45.22 8.85 54.73v.2c2 5.6 9.75 24.71 22.38 40.82A167.53 167.53 0 0 0 115 470.66v-.2l.2.2c39.91 27.12 84.16 25.34 84.16 25.34 7.66-.31 33.32 0 62.46-13.81 32.32-15.31 50.72-38.12 50.72-38.12a158.46 158.46 0 0 0 27.64-45.93c7.46-19.61 9.95-43.13 9.95-52.53V176.49c1 .6 14.32 9.41 14.32 9.41s19.19 12.3 49.13 20.31c21.48 5.7 50.42 6.9 50.42 6.9v-81.84c-10.14 1.1-30.73-2.1-51.81-12.61z">
+                                    </path>
+                                </svg></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div
+            class="my-12 flex w-full flex-col items-start justify-start gap-2 text-base md:flex-row md:justify-between md:text-base lg:mb-0 lg:mt-16 lg:items-center lg:justify-between lg:text-sm">
+            <span>© 2025 Himalayan Flavours </span><span>Website by: &nbsp;<a class="font-bold"
+                    href="https://www.longtail.info/" target="_blank">Longtail e-Media</a></span>
+        </div>
+    </section>
+</footer>
+`;
+  }
+
   return "";
 };
 

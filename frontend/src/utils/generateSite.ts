@@ -1,5 +1,7 @@
-import Navbar from '../components/Navbar';
-import About from '../components/About';
+import Navbar from "../components/Navbar";
+import About from "../components/About";
+import Footer from "../components/Footer";
+import Gallery from "../components/Gallery";
 // Import other components as needed
 
 export const generateSite = (
@@ -12,16 +14,20 @@ export const generateSite = (
   const generatedComponents = components
     .map((component) => {
       switch (component.type) {
-        case 'Navbar':
+        case "Navbar":
           return Navbar.generateHTML(component.design, primaryColor);
-        case 'About':
+        case "About":
           return About.generateHTML(component.design, primaryColor);
+        case "Gallery":
+          return Gallery.generateHTML(component.design, primaryColor);
+        case "Footer":
+          return Footer.generateHTML(component.design, primaryColor);
         // Add cases for other components (Header, Footer, etc.)
         default:
-          return '';
+          return "";
       }
     })
-    .join('\n');
+    .join("\n");
 
   return `
     <!DOCTYPE html>

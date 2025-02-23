@@ -6,6 +6,10 @@
 
 @layer components {
 
+    * {
+        scrollbar-width: none;
+    }
+
     *,
     body {
         @apply font-body bg-white;
