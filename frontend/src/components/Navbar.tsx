@@ -99,7 +99,12 @@ const Navbar: React.FC<NavbarProps> & {
   generateHTML: (design: string, color: string) => string;
 } = ({ design, color }) => {
   const htmlString = generateNavbarHTML(design, color);
-  return <div dangerouslySetInnerHTML={{ __html: htmlString }} />;
+  return (
+    <div
+      className="relative"
+      dangerouslySetInnerHTML={{ __html: htmlString }}
+    />
+  );
 };
 
 // Static method to generate HTML for the Navbar component

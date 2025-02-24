@@ -6,6 +6,8 @@ import { primaryColors } from "./utils/colors";
 import { headingFonts, bodyFonts } from "./utils/fonts";
 import Footer from "./components/Footer";
 import Gallery from "./components/Gallery";
+import { RiDeleteBin6Line } from "react-icons/ri";
+import Hero from "./components/Hero";
 
 const App: React.FC = () => {
   const [components, setComponents] = useState<
@@ -77,6 +79,31 @@ const App: React.FC = () => {
         {
           name: "Design5",
           component: <Navbar design="Design5" color={primaryColor} />,
+        },
+      ],
+    },
+    {
+      name: "Hero",
+      designs: [
+        {
+          name: "Design1",
+          component: <Hero design="Design1" color={primaryColor} />,
+        },
+        {
+          name: "Design2",
+          component: <Hero design="Design2" color={primaryColor} />,
+        },
+        {
+          name: "Design3",
+          component: <Hero design="Design3" color={primaryColor} />,
+        },
+        {
+          name: "Design4",
+          component: <Hero design="Design4" color={primaryColor} />,
+        },
+        {
+          name: "Design5",
+          component: <Hero design="Design5" color={primaryColor} />,
         },
       ],
     },
@@ -222,7 +249,7 @@ const App: React.FC = () => {
               {category.designs.map((design, index) => (
                 <div
                   key={index}
-                  className="border border-black/20 p-4 rounded-lg relative min-h-32"
+                  className="border border-black/20 p-4 rounded-lg relative min-h-40"
                 >
                   {design.component}
                   <button
@@ -250,22 +277,21 @@ const App: React.FC = () => {
 
       {/* Preview Side Navigation */}
       <div
-        className={`fixed top-0 right-0 h-full w-full bg-white z-50 shadow-lg transform transition-transform ${
+        className={`fixed inset-0 h-full w-full bg-white z-50 shadow-lg transform transition-transform ${
           isPreviewOpen ? "translate-x-0" : "translate-x-full"
         }`}
       >
-        <div className="flex justify-between items-center p-4 border-b border-gray-200">
-          <h2 className="text-xl font-semibold">Site Preview</h2>
-          <button
-            onClick={closePreview}
-            className="text-gray-500 hover:text-gray-700"
-          >
-            Close
-          </button>
-        </div>
-        <div className="h-auto max-h-full overflow-y-auto">
+        <div className="h-[calc(100%-4rem)] max-h-full overflow-y-auto">
           {components.map((component) => (
-            <div key={component.id} className="relative">
+            <React.Fragment key={component.id}>
+              <button
+                type="button"
+                onClick={() => removeComponent(component.id)}
+                className="px-4 w-24 sticky top-2 left-2 py-1 z-[99] flex items-center gap-1 cursor-pointer border border-red-600 text-sm hover:bg-red-600 hover:text-red-100 transition-all duration-200 bg-red-100 text-red-600 rounded-full"
+              >
+                <RiDeleteBin6Line className="bg-transparent text-base" />
+                {component.type}
+              </button>
               {component.type === "Navbar" && (
                 <Navbar design={component.design} color={primaryColor} />
               )}
@@ -278,22 +304,22 @@ const App: React.FC = () => {
               {component.type === "Footer" && (
                 <Footer design={component.design} color={primaryColor} />
               )}
-              <button
-                onClick={() => removeComponent(component.id)}
-                className="absolute top-2 right-2 bg-black text-white px-2 py-1 rounded z-50"
-              >
-                Remove
-              </button>
-            </div>
+            </React.Fragment>
           ))}
         </div>
-        <div className="p-4 border-t border-gray-200 fixed bottom-0 w-full bg-white">
+        <div className="p-2 border-t flex items-center gap-2 justify-between border-gray-200 z-50 fixed bottom-0 w-full bg-white">
           <button
             type="button"
             onClick={handleGenerateSite}
             className="w-full bg-black text-white cursor-pointer px-8 py-4 rounded"
           >
             Generate Website
+          </button>
+          <button
+            onClick={closePreview}
+            className="w-full flex-1 bg-gray-300 text-black outline-2 outline-black/50 -outline-offset-2 cursor-pointer px-8 py-4 rounded"
+          >
+            Close
           </button>
         </div>
       </div>
