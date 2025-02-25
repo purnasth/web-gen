@@ -68,44 +68,6 @@ const generateHeroHTML = (design: string, color: string): string => {
             <track src="#" kind="captions" srclang="en" label="english_captions">Your browser does not support the video
             tag.
         </video>
-        <div
-            class="fixed top-0 right-0 size-fit h-screen translate-x-24 group-hover:translate-x-0 transition-all duration-500 ease-linear z-20 flex items-center justify-center">
-            <svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 73 569"
-                class="w-auto h-72 object-contain pointer-events-none">
-                <defs>
-                    <image width="73" height="1037" id="img1"
-                        href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEkAAAQNAQMAAAArO/X2AAAAAXNSR0IB2cksfwAAAAZQTFRFAAAAAAAApWe5zwAAAAJ0Uk5TAP9bkSK1AAABqUlEQVR4nO3YMXLCMBCFYXsoXHIEjuLJUXKElCkydm7GUTgCJQWDI2l3NQ95iYA4kMy8VF+jlUyq/dvG/saWJEmSJEmSJJ/IdngSVx8Lsnv/KddvFW5eK+xfrufQepw+v2d78rg6euwOHtf7zM3OY7/1OIyZU2NsTx67Q+Z6n7nZZfbbzGHMnBpjmGUMs4xhljEMMIYBynhKGU8p4yllPKWMp4TplHB1zEynhOmUMJ0STo1RBiSma4UyIDF8uFFmJcqskjI2UsdGyrsS9YaCelmkXlZQ7y2o9xbUJ5zTXnOR9sZz2huvoX3ENbRPu5H27YvQfrLH0P4VJEmSJEmSJEn+Fz52Z6hy0X3ozp0MWF37blkn/YUUWF1p/U34wtbsb9j+Ng7rur/Pw8IPGQDiABLqAeQFiA6QIiBQ6B1FzMDEAeEDcghEEkgnMmKWWSC+pHOzUJPOzaMOpB4IQHHEvBBBN8KwBLkJIhSkqTDNaVcQt5BQv/w8Bv0MAhvQj3FQ6/yyB7zQBv2O6LMaJauFs9pIfd5ZZBcNxMDfCtp/oeaTJEmSJEmS5JxfhzXgu3BP99kAAAAASUVORK5CYII=">
-                    </image>
-                </defs>
-                <style></style>
-                <use id="Layer 2" href="#img1" x="0" y="-230"></use>
-            </svg>
-            <div class="absolute inset-0 flex items-center justify-center flex-col gap-3"><button
-                    class="text-white/70 hover:text-white text-xl p-1 hover:bg-white/20 outline outline-white/0 hover:outline-white/50 rounded-full transition-all duration-300 hover:scale-110"><svg
-                        stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round"
-                        stroke-linejoin="round" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M6 5m0 1a1 1 0 0 1 1 -1h2a1 1 0 0 1 1 1v12a1 1 0 0 1 -1 1h-2a1 1 0 0 1 -1 -1z"></path>
-                        <path d="M14 5m0 1a1 1 0 0 1 1 -1h2a1 1 0 0 1 1 1v12a1 1 0 0 1 -1 1h-2a1 1 0 0 1 -1 -1z"></path>
-                    </svg></button><button
-                    class="text-white/70 hover:text-white text-xl p-1 hover:bg-white/20 outline outline-white/0 hover:outline-white/50 rounded-full transition-all duration-300 hover:scale-110"><svg
-                        stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" height="1em"
-                        width="1em" xmlns="http://www.w3.org/2000/svg">
-                        <path
-                            d="m21.707 20.293-2.023-2.023A9.566 9.566 0 0 0 21.999 12c0-4.091-2.472-7.453-5.999-9v2c2.387 1.386 3.999 4.047 3.999 7a8.113 8.113 0 0 1-1.672 4.913l-1.285-1.285C17.644 14.536 18 13.19 18 12c0-1.771-.775-3.9-2-5v7.586l-2-2V4a1 1 0 0 0-1.554-.832L7.727 6.313l-4.02-4.02-1.414 1.414 18 18 1.414-1.414zM12 5.868v4.718L9.169 7.755 12 5.868zM4 17h2.697l5.748 3.832a1.004 1.004 0 0 0 1.027.05A1 1 0 0 0 14 20v-1.879l-2-2v2.011l-4.445-2.964c-.025-.017-.056-.02-.082-.033a.986.986 0 0 0-.382-.116C7.059 15.016 7.032 15 7 15H4V9h.879L3.102 7.223A1.995 1.995 0 0 0 2 9v6c0 1.103.897 2 2 2z">
-                        </path>
-                    </svg></button><button
-                    class="text-white/70 hover:text-white text-xl p-1 hover:bg-white/20 outline outline-white/0 hover:outline-white/50 rounded-full transition-all duration-300 hover:scale-110"><svg
-                        stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" height="1em"
-                        width="1em" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M5 5h5V3H3v7h2zm5 14H5v-5H3v7h7zm11-5h-2v5h-5v2h7zm-2-4h2V3h-7v2h5z"></path>
-                    </svg></button><button
-                    class="text-white/70 hover:text-white text-xl p-1 hover:bg-white/20 outline outline-white/0 hover:outline-white/50 rounded-full transition-all duration-300 hover:scale-110"><svg
-                        stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round"
-                        stroke-linejoin="round" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M11 19h-6a2 2 0 0 1 -2 -2v-10a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v4"></path>
-                        <path d="M14 14m0 1a1 1 0 0 1 1 -1h5a1 1 0 0 1 1 1v3a1 1 0 0 1 -1 1h-5a1 1 0 0 1 -1 -1z"></path>
-                    </svg></button></div>
-        </div>
     </section>
     <div
         class="bg-gradient-to-t from-black/60 to-black/0 absolute inset-0 size-full z-0 flex items-center justify-end flex-col text-white pb-12 2xl:pb-12 space-y-3 md:space-y-2 pointer-events-none">
@@ -151,6 +113,51 @@ const generateHeroHTML = (design: string, color: string): string => {
 </main>
 `;
   }
+
+  if (design === "Design6") {
+    return `
+    <div class="bg-white overflow-hidden">
+    <div class="relative isolate px-6 pt-14 lg:px-8">
+        <div class="absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80"
+            aria-hidden="true">
+            <div class="relative left-[calc(50%-11rem)] aspect-1155/678 w-[36.125rem] -translate-x-1/2 rotate-[30deg] bg-linear-to-tr from-[#ff80b5] to-[#9089fc] opacity-30 sm:left-[calc(50%-30rem)] sm:w-[72.1875rem]"
+                style="clip-path: polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)">
+            </div>
+        </div>
+        <div class="mx-auto max-w-2xl py-32 sm:py-48 lg:py-56">
+            <div class="hidden sm:mb-8 sm:flex sm:justify-center">
+                <div
+                    class="relative rounded-full px-3 py-1 text-sm/6 text-gray-600 ring-1 ring-gray-900/10 hover:ring-gray-900/20">
+                    Announcing our next round of funding. <a href="#" class="font-semibold text-indigo-600"><span
+                            class="absolute inset-0" aria-hidden="true"></span>Read more <span
+                            aria-hidden="true">&rarr;</span></a>
+                </div>
+            </div>
+            <div class="text-center">
+                <h1 class="text-5xl font-semibold tracking-tight text-balance text-gray-900 sm:text-7xl">Data to enrich
+                    your online business</h1>
+                <p class="mt-8 text-lg font-medium text-pretty text-gray-500 sm:text-xl/8">Anim aute id magna aliqua ad
+                    ad non deserunt sunt. Qui irure qui lorem cupidatat commodo. Elit sunt amet fugiat veniam occaecat.
+                </p>
+                <div class="mt-10 flex items-center justify-center gap-x-6">
+                    <a href="#"
+                        class="rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-xs hover:bg-indigo-500 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Get
+                        started</a>
+                    <a href="#" class="text-sm/6 font-semibold text-gray-900">Learn more <span
+                            aria-hidden="true">→</span></a>
+                </div>
+            </div>
+        </div>
+        <div class="absolute inset-x-0 top-[calc(100%-13rem)] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[calc(100%-30rem)]"
+            aria-hidden="true">
+            <div class="relative left-[calc(50%+3rem)] aspect-1155/678 w-[36.125rem] -translate-x-1/2 bg-linear-to-tr from-[#ff80b5] to-[#9089fc] opacity-30 sm:left-[calc(50%+36rem)] sm:w-[72.1875rem]"
+                style="clip-path: polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)">
+            </div>
+        </div>
+    </div>
+</div>
+    `
+    }
 
   return "";
 };

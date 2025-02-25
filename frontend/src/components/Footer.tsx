@@ -14,16 +14,8 @@ const generateFooterHTML = (design: string, color: string): string => {
 
   if (design === "Design2") {
     return `
-<footer id="footerComponent" class="p-0"><div class="relative">
-    <div class="absolute inset-0 size-full bg-no-repeat bg-cover bg-center bg-fixed -z-10"
-    style="background-image: url('https://legacy.purnashrestha.com.np/dayatra/assets/img/slider/buildingLights.webp');">
-    >
-    </div>
-
-    <div class="absolute inset-0 bg-gradient-to-t from-black via-black to-black opacity-70 size-full pointer-events-none select-none -z-10">
-    </div>
-
-    <div class="container mx-auto py-16 md:pt-32 md:pb-16 text-black z-20 overflow-x-hidden">
+<footer id="footerComponent" class="p-0 bg-${color}-600"><div class="relative">
+    <div class="container mx-auto py-16 md:pt-32 md:pb-16 text-${color}-50 z-20 overflow-x-hidden">
         <div class="grid grid-cols-1 md:grid-cols-2 gap-12 xl:gap-64">
             <div class="flex flex-col gap-2">
                 <h2><a href="https://www.hoteldayatra.com/project/"><img src="https://legacy.purnashrestha.com.np/dayatra/assets/img/logo.svg" alt="Hotel Da Yatra Logo" class="w-auto h-32 md:h-48 object-contain mb-4"></a></h2>
@@ -71,7 +63,7 @@ const generateFooterHTML = (design: string, color: string): string => {
     </div>
 
     <div class="flex items-center justify-center gap-8">
-        <button type="button" id="scroll-to-top" class="flex items-center justify-center z-50 bg-${color}-200 bg-amber-200 text-black scroll-to-top py-3 px-4 rounded-full outline-[1.5px] outline-dashed outline-${color}-200 outline-offset-4 translate-y-6 hover:animate-pulse hover:outline-offset-2 transition-all duration-100 ease-linear size-11 text-2xl cursor-pointer" aria-label="Back To Top" title="Back To Top">
+        <button type="button" id="scroll-to-top" class="flex items-center justify-center z-50 bg-${color}-200 bg-amber-300 text-black scroll-to-top py-3 px-4 rounded-full outline-[1.5px] outline-dashed outline-${color}-200 outline-offset-4 translate-y-6 hover:animate-pulse hover:outline-offset-2 transition-all duration-100 ease-linear size-11 text-2xl cursor-pointer" aria-label="Back To Top" title="Back To Top">
         &uarr;
         </button>
     </div>
@@ -271,7 +263,7 @@ const generateFooterHTML = (design: string, color: string): string => {
 
   if (design === "Design5") {
     return `
-   <footer class="h-auto overflow-hidden p-0 md:h-screen relative z-10 px-4 py-12 sm:py-24 md:px-12 md:py-32 lg:py-36 xl:px-16 xl:py-48">
+   <footer class="h-auto overflow-hidden p-0 md:min-h-screen relative z-10 px-4 py-12 sm:py-24 md:px-12 md:py-32 lg:py-36 xl:px-16 xl:py-48">
     <div class="pointer-events-none absolute bottom-0 -z-10 h-[calc(100%+25vh)] w-full bg-cover bg-bottom bg-no-repeat md:h-[140vh]"
         style="background-image: url(&quot;/assets/bg_cuisine-CXN14gmB.png&quot;);"></div>
     <div class="pointer-events-none absolute inset-0 -z-10 size-full bg-gradient-to-t from-white to-transparent"></div>
@@ -299,9 +291,7 @@ const generateFooterHTML = (design: string, color: string): string => {
                         class="text-left text-xs font-bold uppercase text-dark/70 lg:text-center">Reviews</span>
                     <div class="relative mt-8">
                         <div class="h-full">
-                            <div class="swiper-wrapper">
-                                <div class="flex flex-col items-center" style="width: 672px;"
-                                    data-swiper-slide-index="0">
+                                <div class="flex flex-col items-center">
                                     <p class="review text-justify text-sm sm:text-base md:text-pretty">
                                         Amazing depth of flavour in dishes, very large servings. Best aloo parathas I’ve
                                         had since Delhi. Cute automatic serving trolley! Very extensive menu. And they
@@ -318,7 +308,6 @@ const generateFooterHTML = (design: string, color: string): string => {
                                         </div>
                                     </a>
                                 </div>
-                            </div>
                         </div>
                     </div>
                 </div>
@@ -350,7 +339,7 @@ const generateFooterHTML = (design: string, color: string): string => {
                             <path d="M14.43 10 12 2l-2.43 8H2l6.18 4.41L5.83 22 12 17.31 18.18 22l-2.35-7.59L22 10z">
                             </path>
                         </svg></span>
-                    <p class="my-4 text-sm text-dark/50"><strong class="font-bold text-dark">5.0</strong>/ 0 review</p>
+                    <p class="my-4 text-sm text-dark/50"><strong class="font-bold text-dark">5.0</strong>/ 13,587+ review</p>
                 </div>
             </div>
             <div class="col-span-1 w-full text-left lg:col-span-2 lg:text-right"><span

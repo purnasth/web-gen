@@ -8,6 +8,7 @@ import Footer from "./components/Footer";
 import Gallery from "./components/Gallery";
 import { RiDeleteBin6Line } from "react-icons/ri";
 import Hero from "./components/Hero";
+import Testimonials from "./components/Testimonials";
 
 const App: React.FC = () => {
   const [components, setComponents] = useState<
@@ -105,6 +106,10 @@ const App: React.FC = () => {
           name: "Design5",
           component: <Hero design="Design5" color={primaryColor} />,
         },
+        {
+          name: "Design6",
+          component: <Hero design="Design6" color={primaryColor} />,
+        },
       ],
     },
     {
@@ -138,6 +143,23 @@ const App: React.FC = () => {
         {
           name: "Design3",
           component: <Gallery design="Design3" color={primaryColor} />,
+        },
+      ],
+    },
+    {
+      name: "Testimonials",
+      designs: [
+        {
+          name: "Design1",
+          component: <Testimonials design="Design1" color={primaryColor} />,
+        },
+        {
+          name: "Design2",
+          component: <Testimonials design="Design2" color={primaryColor} />,
+        },
+        {
+          name: "Design3",
+          component: <Testimonials design="Design3" color={primaryColor} />,
         },
       ],
     },
@@ -295,11 +317,17 @@ const App: React.FC = () => {
               {component.type === "Navbar" && (
                 <Navbar design={component.design} color={primaryColor} />
               )}
+              {component.type === "Hero" && (
+                <Hero design={component.design} color={primaryColor} />
+              )}
               {component.type === "About" && (
                 <About design={component.design} color={primaryColor} />
               )}
               {component.type === "Gallery" && (
                 <Gallery design={component.design} color={primaryColor} />
+              )}
+              {component.type === "Testimonials" && (
+                <Testimonials design={component.design} color={primaryColor} />
               )}
               {component.type === "Footer" && (
                 <Footer design={component.design} color={primaryColor} />

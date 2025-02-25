@@ -2,6 +2,8 @@ import Navbar from "../components/Navbar";
 import About from "../components/About";
 import Footer from "../components/Footer";
 import Gallery from "../components/Gallery";
+import Hero from "../components/Hero";
+import Testimonials from "../components/Testimonials";
 // Import other components as needed
 
 export const generateSite = (
@@ -16,10 +18,14 @@ export const generateSite = (
       switch (component.type) {
         case "Navbar":
           return Navbar.generateHTML(component.design, primaryColor);
+        case "Hero":
+          return Hero.generateHTML(component.design, primaryColor);
         case "About":
           return About.generateHTML(component.design, primaryColor);
         case "Gallery":
           return Gallery.generateHTML(component.design, primaryColor);
+        case "Testimonials":
+          return Testimonials.generateHTML(component.design, primaryColor);
         case "Footer":
           return Footer.generateHTML(component.design, primaryColor);
         // Add cases for other components (Header, Footer, etc.)
