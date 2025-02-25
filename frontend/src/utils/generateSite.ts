@@ -4,6 +4,7 @@ import Footer from "../components/Footer";
 import Gallery from "../components/Gallery";
 import Hero from "../components/Hero";
 import Testimonials from "../components/Testimonials";
+import Accommodation from "../components/Accommodation";
 // Import other components as needed
 
 export const generateSite = (
@@ -22,6 +23,8 @@ export const generateSite = (
           return Hero.generateHTML(component.design, primaryColor);
         case "About":
           return About.generateHTML(component.design, primaryColor);
+        case "Accommodation":
+          return Accommodation.generateHTML(component.design, primaryColor);
         case "Gallery":
           return Gallery.generateHTML(component.design, primaryColor);
         case "Testimonials":

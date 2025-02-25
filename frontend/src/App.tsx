@@ -1,4 +1,6 @@
 import React, { useState } from "react";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 import Navbar from "./components/Navbar";
 import About from "./components/About";
 import { generateSite } from "./utils/generateSite";
@@ -9,24 +11,16 @@ import Gallery from "./components/Gallery";
 import { RiDeleteBin6Line } from "react-icons/ri";
 import Hero from "./components/Hero";
 import Testimonials from "./components/Testimonials";
+import Accommodation from "./components/Accommodation";
 
 const App: React.FC = () => {
   const [components, setComponents] = useState<
     { id: number; type: string; design: string }[]
   >([]);
   const [primaryColor, setPrimaryColor] = useState<string>("");
-  const [headingFont, setHeadingFont] = useState<string>("Merriweather");
-  const [bodyFont, setBodyFont] = useState<string>("Open Sans");
+  const [headingFont, setHeadingFont] = useState<string>("Playfair Display");
+  const [bodyFont, setBodyFont] = useState<string>("Inter");
   const [isPreviewOpen, setIsPreviewOpen] = useState<boolean>(false);
-
-  // useEffect(() => {
-  //   setIsPreviewOpen(true);
-  //   document.body.style.overflow = "hidden";
-
-  //   return () => {
-  //     document.body.style.overflow = "auto";
-  //   };
-  // }, []);
 
   const closePreview = () => {
     setIsPreviewOpen(false);
@@ -35,6 +29,7 @@ const App: React.FC = () => {
 
   const addComponent = (type: string, design: string) => {
     setComponents([...components, { id: Date.now(), type, design }]);
+    toast.success(`${type} component added!`);
   };
 
   const removeComponent = (id: number) => {
@@ -130,6 +125,23 @@ const App: React.FC = () => {
       ],
     },
     {
+      name: "Accommodation",
+      designs: [
+        {
+          name: "Design1",
+          component: <Accommodation design="Design1" color={primaryColor} />,
+        },
+        {
+          name: "Design2",
+          component: <Accommodation design="Design2" color={primaryColor} />,
+        },
+        {
+          name: "Design3",
+          component: <Accommodation design="Design3" color={primaryColor} />,
+        },
+      ],
+    },
+    {
       name: "Gallery",
       designs: [
         {
@@ -192,6 +204,7 @@ const App: React.FC = () => {
 
   return (
     <>
+      <ToastContainer />
       <nav className="flex items-center justify-between shadow border-b border-black/20 p-4">
         <h1 className="text-2xl font-bold">Longtail Website Generator</h1>
         <div className="flex gap-4">
@@ -199,13 +212,13 @@ const App: React.FC = () => {
           <div className="">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
               <div>
-                <label className="block text-sm font-medium mb-1">
+                <label className="block text-xs font-light mb-1">
                   Heading Font (Serif)
                 </label>
                 <select
                   value={headingFont}
                   onChange={(e) => setHeadingFont(e.target.value)}
-                  className="w-full p-2 border rounded"
+                  className="w-full p-2 border rounded text-sm"
                 >
                   {headingFonts.map((font) => (
                     <option key={font} value={font}>
@@ -215,13 +228,13 @@ const App: React.FC = () => {
                 </select>
               </div>
               <div>
-                <label className="block text-sm font-medium mb-1">
+                <label className="block text-xs font-light mb-1">
                   Body Font (Sans-Serif)
                 </label>
                 <select
                   value={bodyFont}
                   onChange={(e) => setBodyFont(e.target.value)}
-                  className="w-full p-2 border rounded"
+                  className="w-full p-2 border rounded text-sm"
                 >
                   {bodyFonts.map((font) => (
                     <option key={font} value={font}>
@@ -235,13 +248,13 @@ const App: React.FC = () => {
 
           {/* Color Selection */}
           <div className="">
-            <label className="block text-sm font-medium mb-1">
+            <label className="block text-xs font-light mb-1">
               Primary Color
             </label>
             <select
               value={primaryColor}
               onChange={(e) => setPrimaryColor(e.target.value)}
-              className="w-full p-2 border rounded"
+              className="w-full p-2 border rounded text-sm"
             >
               {primaryColors.map((color) => (
                 <option key={color} value={color}>
@@ -322,6 +335,9 @@ const App: React.FC = () => {
               )}
               {component.type === "About" && (
                 <About design={component.design} color={primaryColor} />
+              )}
+              {component.type === "Accommodation" && (
+                <Accommodation design={component.design} color={primaryColor} />
               )}
               {component.type === "Gallery" && (
                 <Gallery design={component.design} color={primaryColor} />

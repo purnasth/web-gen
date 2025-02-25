@@ -10,6 +10,10 @@
         scrollbar-width: none;
     }
 
+    * {
+        @apply !font-body;
+    }
+
     body {
         @apply font-body bg-white;
     }
