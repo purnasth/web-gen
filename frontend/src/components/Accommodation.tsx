@@ -483,7 +483,7 @@ const generateAccommodationHTML = (design: string, color: string): string => {
                         <div
                             class="absolute inset-0 flex items-end justify-center opacity-0 group-hover:opacity-100 transition-all duration-300 ease-linear">
                             <button to="/accommodation/executive-room"
-                                class="bg-goldLight text-navy hover:text-ivory hover:bg-navy px-4 py-1 rounded-full text-base translate-y-full group-hover:-translate-y-6 transition-all duration-300 ease-linear"
+                                class="bg-${color}-500 text-black hover:text-${color}-500 hover:bg-${color}-100 px-4 py-1 rounded-full text-base translate-y-full group-hover:-translate-y-6 transition-all duration-300 ease-linear"
                                 title="Explore" aria-label="Explore" type="button"><svg stroke="currentColor"
                                     fill="currentColor" stroke-width="0" viewBox="0 0 24 24" aria-hidden="true"
                                     height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
@@ -512,7 +512,7 @@ const generateAccommodationHTML = (design: string, color: string): string => {
                         <div
                             class="absolute inset-0 flex items-end justify-center opacity-0 group-hover:opacity-100 transition-all duration-300 ease-linear">
                             <button to="/accommodation/deluxe-room"
-                                class="bg-goldLight text-navy hover:text-ivory hover:bg-navy px-4 py-1 rounded-full text-base translate-y-full group-hover:-translate-y-6 transition-all duration-300 ease-linear"
+                                class="bg-${color}-500 text-black hover:text-${color}-500 hover:bg-${color}-100 px-4 py-1 rounded-full text-base translate-y-full group-hover:-translate-y-6 transition-all duration-300 ease-linear"
                                 title="Explore" aria-label="Explore" type="button"><svg stroke="currentColor"
                                     fill="currentColor" stroke-width="0" viewBox="0 0 24 24" aria-hidden="true"
                                     height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
@@ -540,7 +540,7 @@ const generateAccommodationHTML = (design: string, color: string): string => {
                         <div
                             class="absolute inset-0 flex items-end justify-center opacity-0 group-hover:opacity-100 transition-all duration-300 ease-linear">
                             <button to="/accommodation/super-deluxe-room"
-                                class="bg-goldLight text-navy hover:text-ivory hover:bg-navy px-4 py-1 rounded-full text-base translate-y-full group-hover:-translate-y-6 transition-all duration-300 ease-linear"
+                                class="bg-${color}-500 text-black hover:text-${color}-500 hover:bg-${color}-100 px-4 py-1 rounded-full text-base translate-y-full group-hover:-translate-y-6 transition-all duration-300 ease-linear"
                                 title="Explore" aria-label="Explore" type="button"><svg stroke="currentColor"
                                     fill="currentColor" stroke-width="0" viewBox="0 0 24 24" aria-hidden="true"
                                     height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
@@ -556,8 +556,8 @@ const generateAccommodationHTML = (design: string, color: string): string => {
                     our Super Deluxe Room, featuring splendid interiors and top-notch facilities.</p>
             </a></div>
     </div>
-    <div class="flex items-center justify-center mt-10"><button
-            class="group bg-goldLight text-navy hover:text-ivory hover:bg-navy px-4 py-1 rounded-full text-xl transition-all duration-300 ease-linear"
+    <div class="flex items-center justify-center gap-2 mt-10"><button
+            class="group bg-${color}-500 text-black hover:text-${color}-500 hover:bg-${color}-100 px-4 py-1 rounded-full text-xl transition-all duration-300 ease-linear"
             title="Previous" aria-label="Previous" type="button"><svg stroke="currentColor" fill="currentColor"
                 stroke-width="0" viewBox="0 0 24 24" aria-hidden="true"
                 class="group-hover:-translate-x-2 transition-all duration-150 ease-linear" height="1em" width="1em"
@@ -566,7 +566,7 @@ const generateAccommodationHTML = (design: string, color: string): string => {
                     d="M7.28 7.72a.75.75 0 010 1.06l-2.47 2.47H21a.75.75 0 010 1.5H4.81l2.47 2.47a.75.75 0 11-1.06 1.06l-3.75-3.75a.75.75 0 010-1.06l3.75-3.75a.75.75 0 011.06 0z"
                     clip-rule="evenodd"></path>
             </svg></button><button
-            class="group bg-goldLight text-navy hover:text-ivory hover:bg-navy px-4 py-1 rounded-full text-xl transition-all duration-300 ease-linear"
+            class="group bg-${color}-500 text-black hover:text-${color}-500 hover:bg-${color}-100 px-4 py-1 rounded-full text-xl transition-all duration-300 ease-linear"
             title="Next" aria-label="Next" type="button"><svg stroke="currentColor" fill="currentColor" stroke-width="0"
                 viewBox="0 0 24 24" aria-hidden="true"
                 class="group-hover:translate-x-2 transition-all duration-150 ease-linear" height="1em" width="1em"

@@ -21,7 +21,7 @@ const generateHeroHTML = (design: string, color: string): string => {
             <p class="my-4 md:my-6 max-w-md px-4 text-center text-sm md:text-base">
 	Satprayas Nepal is a service oriented non-profit organization that works for the well being and welfare of physically and mentally challenged children.
             </p>
-            <a class="transition-all duration-200 group flex items-center justify-center gap-2 rounded-full border-2 border-orange-500 bg-orange-500 px-6 py-2 text-sm font-semibold text-white hover:bg-white hover:text-orange-500 md:text-base"
+            <a class="transition-all duration-200 group flex items-center justify-center gap-2 rounded-full border-2 border-${color}-500 bg-${color}-500 px-6 py-2 text-sm font-semibold text-white hover:bg-${color}-100 hover:text-${color}-500 md:text-base"
                 href="/contact">
                 Make a donation
                 <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 256 256"
@@ -49,8 +49,8 @@ const generateHeroHTML = (design: string, color: string): string => {
             <h2
                 class="text-shadow-dark-glow mx-8 mb-5 mt-8 max-w-xl text-center text-xl font-bold leading-relaxed text-dark md:mx-0 md:text-4xl md:leading-snug">
                 Taste the Cuisine and Feel the dewhiteness</h2><img src="https://himalayan-flavours.com/assets/fire-Ch4bH2kY.png" alt="Fire Icon"
-                class="size-12 rounded-full border border-orange-300 object-contain p-1">
-            <div class="bottom-0 h-10 w-px bg-orange-300 md:h-20"></div>
+                class="size-12 rounded-full border border-${color}-300 object-contain p-1">
+            <div class="bottom-0 h-10 w-px bg-${color}-300 md:h-20"></div>
         </div>
     </div>
 </section>

@@ -12,6 +12,7 @@ import { RiDeleteBin6Line } from "react-icons/ri";
 import Hero from "./components/Hero";
 import Testimonials from "./components/Testimonials";
 import Accommodation from "./components/Accommodation";
+import Services from "./components/Services";
 
 const App: React.FC = () => {
   const [components, setComponents] = useState<
@@ -51,6 +52,11 @@ const App: React.FC = () => {
     a.click();
     URL.revokeObjectURL(url);
   };
+
+  const generatePreviewStyles = () => ({
+    fontFamily: bodyFont,
+    color: primaryColor,
+  });
 
   const categories = [
     {
@@ -142,6 +148,23 @@ const App: React.FC = () => {
       ],
     },
     {
+      name: "Services",
+      designs: [
+        {
+          name: "Design1",
+          component: <Services design="Design1" color={primaryColor} />,
+        },
+        {
+          name: "Design2",
+          component: <Services design="Design2" color={primaryColor} />,
+        },
+        {
+          name: "Design3",
+          component: <Services design="Design3" color={primaryColor} />,
+        },
+      ],
+    },
+    {
       name: "Gallery",
       designs: [
         {
@@ -205,6 +228,7 @@ const App: React.FC = () => {
   return (
     <>
       <ToastContainer />
+
       <nav className="flex items-center justify-between shadow border-b border-black/20 p-4">
         <h1 className="text-2xl font-bold">Longtail Website Generator</h1>
         <div className="flex gap-4">
@@ -315,6 +339,7 @@ const App: React.FC = () => {
         className={`fixed inset-0 h-full w-full bg-white z-50 shadow-lg transform transition-transform ${
           isPreviewOpen ? "translate-x-0" : "translate-x-full"
         }`}
+        style={generatePreviewStyles()}
       >
         <div className="h-[calc(100%-4rem)] max-h-full overflow-y-auto">
           {components.map((component) => (
@@ -322,7 +347,7 @@ const App: React.FC = () => {
               <button
                 type="button"
                 onClick={() => removeComponent(component.id)}
-                className="px-4 w-24 sticky top-2 left-2 py-1 z-[99] flex items-center gap-1 cursor-pointer border border-red-600 text-sm hover:bg-red-600 hover:text-red-100 transition-all duration-200 bg-red-100 text-red-600 rounded-full"
+                className="px-4 w-40 sticky top-2 left-2 py-1 z-[99] flex items-center justify-center gap-1 cursor-pointer border border-red-600 text-sm hover:bg-red-600 hover:text-red-100 transition-all duration-200 bg-red-100 text-red-600 rounded-full"
               >
                 <RiDeleteBin6Line className="bg-transparent text-base" />
                 {component.type}
@@ -341,6 +366,9 @@ const App: React.FC = () => {
               )}
               {component.type === "Gallery" && (
                 <Gallery design={component.design} color={primaryColor} />
+              )}
+              {component.type === "Services" && (
+                <Services design={component.design} color={primaryColor} />
               )}
               {component.type === "Testimonials" && (
                 <Testimonials design={component.design} color={primaryColor} />

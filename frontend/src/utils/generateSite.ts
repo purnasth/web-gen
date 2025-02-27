@@ -5,6 +5,7 @@ import Gallery from "../components/Gallery";
 import Hero from "../components/Hero";
 import Testimonials from "../components/Testimonials";
 import Accommodation from "../components/Accommodation";
+import Services from "../components/Services";
 // Import other components as needed
 
 export const generateSite = (
@@ -25,6 +26,8 @@ export const generateSite = (
           return About.generateHTML(component.design, primaryColor);
         case "Accommodation":
           return Accommodation.generateHTML(component.design, primaryColor);
+        case "Services":
+          return Services.generateHTML(component.design, primaryColor);
         case "Gallery":
           return Gallery.generateHTML(component.design, primaryColor);
         case "Testimonials":

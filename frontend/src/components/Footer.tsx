@@ -438,7 +438,7 @@ const generateFooterHTML = (design: string, color: string): string => {
 
   if (design === "Design4") {
     return `
-  <footer class="h-auto overflow-hidden bg-light p-0 px-4 xl:h-screen">
+  <footer class="h-auto bg-${color}-500 overflow-hidden bg-light p-0 px-4 xl:h-screen">
     <section class="relative flex size-full flex-col justify-evenly xl:container mx-auto">
         <div class="mt-16 grid grid-cols-1 gap-12 md:grid-cols-2 xl:grid-cols-8 xl:gap-0">
             <div class="z-10 space-y-8 xl:col-span-2">
@@ -595,10 +595,9 @@ const generateFooterHTML = (design: string, color: string): string => {
 
   if (design === "Design5") {
     return `
-   <footer class="h-auto overflow-hidden p-0 md:min-h-screen relative z-10 px-4 py-12 sm:py-24 md:px-12 md:py-32 lg:py-36 xl:px-16 xl:py-48">
+   <footer class="h-auto bg-${color}-500 overflow-hidden p-0 md:min-h-screen relative z-10 px-4 py-12 sm:py-24 md:px-12 md:py-32 lg:py-36 xl:px-16 xl:py-48">
     <div class="pointer-events-none absolute bottom-0 -z-10 h-[calc(100%+25vh)] w-full bg-cover bg-bottom bg-no-repeat md:h-[140vh]"
         style="background-image: url(&quot;/assets/bg_cuisine-CXN14gmB.png&quot;);"></div>
-    <div class="pointer-events-none absolute inset-0 -z-10 size-full bg-gradient-to-t from-white to-transparent"></div>
     <section class="container mx-auto relative flex size-full flex-col items-center justify-evenly">
         <div class="z-10 flex items-center justify-center"><a class="cursor-pointer" aria-label="Himalayan Flavours"
                 title="Himalayan Flavours" href="/"><img
