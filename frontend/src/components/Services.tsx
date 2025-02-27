@@ -9,7 +9,7 @@ const generateServicesHTML = (design: string, color: string): string => {
   if (design === "Design1") {
     return `
     <main class="relative z-10 pb-12 sm:pb-24 md:pb-32 lg:pb-36 xl:pb-48">
-    <div class="grid grid-cols-1 lg:grid-cols-3 gap-0 md:mt-8">
+    <div class="grid grid-cols-1 lg:grid-cols-3 gap-0">
     <div class="relative overflow-hidden group"><img
             src="https://hotelhimalaya.purnashrestha.com.np/images/banner/dine.webp" alt="Dine in Fine Place"
             class="w-full min-h-96 h-[75vh] sm:h-96 md:h-[32rem] lg:h-screen shadow-md transition-all duration-700 ease-linear group-hover:scale-150 object-cover"

@@ -438,7 +438,7 @@ const generateFooterHTML = (design: string, color: string): string => {
 
   if (design === "Design4") {
     return `
-  <footer class="h-auto bg-${color}-500 overflow-hidden bg-light p-0 px-4 xl:h-screen">
+  <footer class="h-auto bg-${color}-500 overflow-hidden bg-light relative z-10 px-4 py-12 sm:py-24 md:px-12 md:py-32 lg:py-36 xl:px-16 xl:py-48 xl:h-screen">
     <section class="relative flex size-full flex-col justify-evenly xl:container mx-auto">
         <div class="mt-16 grid grid-cols-1 gap-12 md:grid-cols-2 xl:grid-cols-8 xl:gap-0">
             <div class="z-10 space-y-8 xl:col-span-2">
